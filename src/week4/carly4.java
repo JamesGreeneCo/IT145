@@ -9,6 +9,7 @@ class carly4
 	static int cost = 35;
 	static int cutoff = 30;
 	static int total;
+	static String contract;
 	static Scanner kb = new Scanner(System.in);
 
 	public static void main(String[] Args) 
@@ -17,12 +18,14 @@ class carly4
 		intro();
 		guess = kbGuess();
 		cost = kbCost(guess, cost);
+		contract = kbContract(contract);
 		//System.out.println("guess: " + a.getGuess());
 		//System.out.println("cost: " + a.getCost());
 		
 		Attend b = new Attend(guess, cost, total);
 		System.out.println("The Amount of Guess is : " + b.getGuess());
 		System.out.println("The Cost per person is : " + b.getCost(guess, cutoff));
+		System.out.println("The Contract is : " + b.getContract(contract));
 		System.out.println(("The Total Cost is : " + b.getTotal(guess, cost)));
 	}	//end of main
 	public static void intro()	
@@ -47,4 +50,9 @@ class carly4
 		
 		return t;
 	}	//end of kbTotal
+	public static String kbContract(String co)	{
+		System.out.println("What event # ?");
+		co = kb.next();
+		return co;
+	}
 }	//end class

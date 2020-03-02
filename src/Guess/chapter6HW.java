@@ -66,7 +66,7 @@ class chapter6HW
 		}	//end of while
 		outputMsg = "Success!";
 		JOptionPane.showMessageDialog(null, outputMsg + " Random number was " + x + ".  You guessed in: " + attempts + " tries");
-	}	/end of decision method
+	}	//end of decision method
 	
 	
 }	//end of class

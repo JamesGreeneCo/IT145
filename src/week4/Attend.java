@@ -7,12 +7,20 @@ public class Attend
 	private int cost = 35;
 	private int cutoff = 30;
 	private int total;
+	private String contract = "A0000";
 	
-	public Attend(int g, int c)	
+	public Attend(int g, int c, String co)	
 	{
 		guess = g;
 		cost = c;
+		contract = co;
 		//cutoff = f;
+	}
+	public void setContract(String co)	{
+		contract = co;
+	}
+	public String getContract(String co)	{
+		return co;
 	}
 	public void setGuess(int g)	
 	{
@@ -39,6 +47,7 @@ public class Attend
 	{
 		if (g >= 50)	{
 			cost = cutoff;
+			System.out.println("Large Event");
 		}
 		return cost;
 	}
