@@ -1,7 +1,8 @@
 package Guess;
 
-public class backend {
-	
+public class backend
+{	//start of class
+	//setting up variables
 	private int LOW_NUM;
 	private int HIGH_NUM;
 	int userNum, randomNum;
@@ -9,11 +10,13 @@ public class backend {
 	private String inputMsg;
 	private String outputMsg = "";
 	
-	public backend()	{
+	public backend()	
+	{	//start of backend
 		LOW_NUM = 1;
 		HIGH_NUM = 10;
-	}
-	public backend(int L, int H, int R, String M, String O, int U, int A)	{
+	}	//end of backend
+	public backend(int L, int H, int R, String M, String O, int U, int A)	
+	{	//start of backend
 		LOW_NUM = L;
 		HIGH_NUM = H;
 		randomNum = R;
@@ -21,57 +24,71 @@ public class backend {
 		outputMsg = O;
 		userNum = U;
 		attempts = A;
-	}
-	public int getLow()	{
+	}	//end of backend
+	public int getLow()	
+	{	//start of getLow method
 		return LOW_NUM;
-	}
-	public void setLow(int L)	{
+	}	//end of getLow method
+	public void setLow(int L)	
+	{	//start of setLow method
 		LOW_NUM = L;
-	}
-	public int getHigh()	{
+	}	//end of setLow method
+	public int getHigh()	
+	{	//start of getHigh mehtod
 		return HIGH_NUM;
-	}
-	public void setHigh(int H)	{
+	}	//end of getHigh method
+	public void setHigh(int H)	
+	{	//start of setHigh method
 		HIGH_NUM = H;
-	}
-	public int getRan(int H, int L)	{
+	}	//end of setHigh method
+	public int getRan(int H, int L)	
+	{	//start of getRan method
 		randomNum = L * (int)(Math.random()*H);
 		return randomNum;
 		
-	}
-	public void setRan(int R)	{
+	}	//end of getRan method
+	public void setRan(int R)	
+	{	//start of setRan method
 		randomNum = R;
-	}
-	public String getInput()	{
+	}	//end of setRan mehtod
+	public String getInput()	
+	{	//start of getInput method
 		return inputMsg;
-	}
-	public void setInput(String M)	{
+	}	//end of getInput method
+	public void setInput(String M)	
+	{	//start of setInput method
 		inputMsg = M;
-	}
-	public String getOutput(String outputMsg, int userNum, int randomNum)	{
+	}	//end of setinput method
+	public String getOutput(String outputMsg, int userNum, int randomNum)	
+	{	//start of getOutput method
 		
 		System.out.println(randomNum);
 		//outputMsg = "working2 " + userNum + randomNum;
 		
 		
 		return outputMsg;
-	}
-	public void setOutput(String O)	{
+	}	//end of getOutput method
+	public void setOutput(String O)	
+	{	//start of setOuput method
 		outputMsg = O;
-	}
-	public int getUser(String M)	{
+	}	//end of setOutput method
+	public int getUser(String M)	
+	{	//start of getUser method
 		//userNum = Integer.parseInt(M);
 		userNum = Integer.parseInt(M);
 		return userNum;
-	}
-	public void setUser(int U)	{
+	}	//end of getUser method
+	public void setUser(int U)	
+	{	//start of setUser mehtod
 		userNum = U;
-	}
-	public int getAttempts(int attempts)	{
+	}	//end of setUser method
+	public int getAttempts(int attempts)	
+	{	//start of getAttempts mehtod
 		return attempts;
-	}
-	public void setAttempts(int A)	{
+	}	//end of getAttemtps method
+	public void setAttempts(int A)	
+	{	//start of setAttempts method
 		attempts = A;
-	}
+	}	//end of setAttempts method
 
-}
+}	//end of class
